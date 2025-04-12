@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home {
+    background-image: url('images/Abstract\ futuristic\ gaming\ background\ for\ offline\ twitch\ stream.jpg'); /* Example path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.first{
+    background: linear-gradient(to right, #f077e6, #00a2ff);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border: 1px solid#ffffff;
+}
+.sec{
+    background: linear-gradient(to right, #ec92e5, #00a2ff);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border: 1px solid#ffffff;
+}
+.third{
+    background: linear-gradient(to right,  #00a2ff, #dd87d6);
+    border-radius: 10px;
+    border: 1px solid#ffffff;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+hr{
+    transform: rotate(90deg);
+}
+.home3{
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #809b7b);
+
+    height: 130vh;
+}
+.image{
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.para{
+    font-size: 10px;
+}
+/* Navbar Link Hover Effects */
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00d2ff; /* Neon Electric Blue for hover */
+    background: linear-gradient(45deg, #FFFF00, #FF7F00);
+    border-radius: 5px; /* Rounded corners */
+    animation: ease all;
+}
+
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    background: linear-gradient(45deg, #9B00FF, #00FFFF);
+    border-radius: 5px; 
+}
+
+.dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #00d2ff; 
+    color: #EEF1DA; 
+    border-radius: 10px;
+}
+
+/* Active Link Hover */
+.navbar-nav .nav-item .nav-link.active {
+    color: #39ff14;
+    font-weight: bold; 
+}
+.navbar-nav .nav-item .nav-link {
+    color: #00d2ff; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-toggler-icon {
+    background-color: #7dcbff; 
+    border:none;
+}
