@@ -180,18 +180,10 @@ hr {
 }
 
 .tab_content img {
-  width: 100%;
-  max-width: 300px; /* optional: to keep desktop size controlled */
+  width: 380px;
   height: auto;
-  display: block;
+  border-radius: 12px;
 }
-@media (max-width: 576px) {
-  .tab_content img {
-    max-width: 100%; /* allow full screen width */
-    margin: 0 auto; /* center the image */
-  }
-}
-
 .tab-pane img {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -613,9 +605,5 @@ footer {
 
   .shop-number input {
     width: 50px;
-  }
-  .tab-content{
-    max-width: 200px;
-    width: 300px;
   }
 }
