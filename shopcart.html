@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shopcart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Gaming</title>
+</head>
+
+<body>
+    <div class="container-fluid home">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Neon discord icon.jpg" alt="" class="img-fluid rounded-pill"
+                        style="height: 60px;width: 60px; object-fit: cover;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-4 fs-4">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-4 fs-4">
+                            <a class="nav-link " href="#">About Us</a>
+                        </li>
+                        <li class="nav-item px-4 fs-4">
+                            <a class="nav-link " href="#">News</a>
+                        </li>
+                        <li class="nav-item px-4 fs-4">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown px-4 fs-4 ">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tournament
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#">Tournament</a></li>
+                                <li><a class="dropdown-item" href="#">Tournament Singles</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-4 fs-4 ">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" target="_blank" href="gaming.html">Gaming Shop</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="shop.html">Page Details</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="shopcart.html">Shop Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                <li><a class="dropdown-item" href="#">Our Servuice</a></li>
+                                <li><a class="dropdown-item" href="#">Service details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-primary">Login</button>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row d-flex justify-content-between gaming-col">
+                <div class="col-xl-6 col-lg-7" style="margin-top:13%;">
+                    <div class="bread_content">
+                        <h2 class="bread_title">SHOP CART</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/" class="">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-5">
+                    <div class="bread">
+                        <img src="shopcartImages/breadcrumb_img02.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart__area team-bg section-pt-120 section-pb-120"
+            style="background-image: url(shopcartImages/team_bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <table class="table table__cart">
+                            <thead>
+                                <tr>
+                                    <th class="product__thumb">&nbsp;</th>
+                                    <th class="product__name">Product</th>
+                                    <th class="product__price">Price</th>
+                                    <th class="product__quantity">Quantity</th>
+                                    <th class="product__subtotal">Subtotal</th>
+                                    <th class="product__remove">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product__thumb"><a href="/shop-details" class=""><img
+                                                src="gamingimages/product01.jpg" alt="prd-img"></a></td>
+                                    <td class="product__name"><a href="/shop-details" class="">Antiaging and
+                                            Longevity</a></td>
+                                    <td class="product__price">$13.00</td>
+                                    <td class="product__quantity">
+                                        <div class="shop__details-qty">
+                                            <form action="#" class="quantity num-block"><input type="text"
+                                                    class="in-num" readonly="" value="1">
+                                                <div class="qtybutton-box"><span class="plus"><i
+                                                            class="fas fa-angle-up"></i></span><span
+                                                        class="minus dis"><i class="fas fa-angle-down"></i></span></div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                    <td class="product__subtotal">$13.00</td>
+                                    <td class="product__remove"><a href="#">×</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="cart__actions">
+                                        <form action="#" class="cart__actions-form"><input type="text"
+                                                placeholder="Coupon code"><button type="submit" class="btn">Apply
+                                                coupon</button>
+                                                <div class="update__cart-btn text-end f-right"><button type="submit"
+                                                    class="btn">Update cart</button></div>
+                                            </form>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="cart__collaterals-wrap">
+                            <h2 class="title">Cart totals</h2>
+                            <ul class="list-wrap">
+                                <li> Subtotal <span>$32.00</span></li>
+                                <li> Total <span class="amount">$32.00</span></li>
+                            </ul><a href="/checkout" class="btn">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <div class="footer-col">
+            <div class="brand">MY<span>KD</span></div>
+            <p>Lorem ipsum dolor sitamet consectetur adipiscing Duis esolilci tudin augue euismod.<br>Nulla ullam dolor
+                sitamet consectetur</p>
+            <p style="margin-top: 15px;"><strong>ACTIVE WITH US »</strong></p>
+            <div class="social-icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+            </div>
+        </div>
+
+        <div class="footer-col footer-links">
+            <h3>QUICK LINK</h3>
+            <ul>
+                <li>Gaming</li>
+                <li>Product</li>
+                <li>All NFTs</li>
+                <li>Social Network</li>
+                <li>Domain Names</li>
+                <li>Collectibles</li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-support">
+            <h3>SUPPORTS</h3>
+            <ul>
+                <li>Setting & Privacy</li>
+                <li>Help & Support</li>
+                <li>Live Auctions</li>
+                <li>Item Details</li>
+                <li>24/7 Supports</li>
+                <li>Our News</li>
+            </ul>
+        </div>
+
+        <div class="footer-col newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>Subscribe our newsletter to get our latest update & newsconsectetur</p>
+            <div style="margin-top: 15px; display: flex; margin-left: -4px;">
+                <input type="email" placeholder="Your email address">
+                <button>➤</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottom-bar">
+        COPYRIGHT © 2025 - ALL RIGHTS RESERVED BY <span style="color:#00ff84">MYKD</span>
+        <div class="payment-icons">
+            <img src="gamingimages/payment_card.png" alt="">
+        </div>
+    </div>
+
+    <div class="scroll-up" id="scrollUpBtn">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Up">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>

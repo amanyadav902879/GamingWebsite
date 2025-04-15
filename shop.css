@@ -451,6 +451,9 @@ table.table.table-sm tr:nth-child(even) th {
   min-height: 220px;
   position: relative;
 }
+.col-12{
+  height: 812px;
+}
 .shop__item-line {
   background: #f5f6f9;
   background: radial-gradient(circle, #f5f6f9 0, hsla(0, 0%, 100%, 0) 100%);

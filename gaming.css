@@ -2,108 +2,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-img{
+  }
+  img {
     max-width: 100%;
     vertical-align: middle;
-}
-li{
+  }
+  li {
     list-style: none;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.home {
-    background-image: url('gamingimages/breadcrumb_bg02.jpg'); /* Example path */
+  }
+  a {
+    text-decoration: none !important;
+    color: white !important;
+    text-transform: uppercase !important;
+  }
+  
+  .home {
+    background-image: url("gamingimages/breadcrumb_bg02.jpg"); /* Example path */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 65vh
-    
-}
-.first{
+    height: 65vh;
+  }
+  .first {
     background: linear-gradient(to right, #f077e6, #00a2ff);
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     color: white;
     border: 1px solid#ffffff;
-}
-.sec{
+  }
+  .sec {
     background: linear-gradient(to right, #ec92e5, #00a2ff);
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     color: white;
     border: 1px solid#ffffff;
-}
-.third{
-    background: linear-gradient(to right,  #00a2ff, #dd87d6);
+  }
+  .third {
+    background: linear-gradient(to right, #00a2ff, #dd87d6);
     border-radius: 10px;
     border: 1px solid#ffffff;
     padding: 10px 20px 10px 20px;
     color: white;
-}
-hr{
+  }
+  hr {
     transform: rotate(90deg);
-}
-
-.home3{
+  }
+  
+  .home3 {
     background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #809b7b);
-
     height: 130vh;
-}
-.image{
+  }
+  .image {
     border-radius: 30px;
     border: 1px solid white;
-}
-.para{
+  }
+  .para {
     font-size: 10px;
-}
-/* Navbar Link Hover Effects */
-.navbar-nav .nav-link {
+  }
+  /* Navbar Link Hover Effects */
+  .navbar-nav .nav-link {
     color: #00d2ff;
     transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
+  }
+  
+  .navbar-nav .nav-link:hover {
     color: #00d2ff;
     background: linear-gradient(45deg, #ffff00, #ff7f00);
     border-radius: 5px;
-}
-
-.navbar-nav .nav-link.active {
+  }
+  
+  .navbar-nav .nav-link.active {
     color: #39ff14;
     font-weight: bold;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     background: linear-gradient(45deg, #9b00ff, #00ffff);
     border-radius: 5px;
-}
-
-.dropdown-item {
+  }
+  
+  .dropdown-item {
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.dropdown-item:hover {
+  }
+  
+  .dropdown-item:hover {
     background-color: #00d2ff;
     color: #eef1da;
     border-radius: 10px;
-}
-
-/* Navbar Toggler Icon */
-.navbar-toggler-icon {
+  }
+  
+  /* Navbar Toggler Icon */
+  .navbar-toggler-icon {
     background-color: #7dcbff;
     border: none;
-}
-.gaming_sub{
+  }
+  .gaming_sub {
     color: white;
-}
-.gaming_head{
-    font-size: 42px;
-}
+  }
+  .gaming_head {
+    font-size: 50px;
+  }
 .shop_widget-title{
     align-items: baseline;
     column-gap: 10px;
