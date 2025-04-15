@@ -17,7 +17,7 @@ a {
 }
 
 .home {
-  background-image: url("gamingimages/breadcrumb_bg02.jpg"); /* Example path */
+  background: url("../images/breadcrumb_bg02.jpg"); /* Example path */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

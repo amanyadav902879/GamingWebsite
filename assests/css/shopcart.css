@@ -17,7 +17,7 @@ a {
 }
 
 .home {
-  background-image: url("shopcartImages/breadcrumb_bg01.jpg"); /* Example path */
+  background-image: url("../images/breadcrumb_bg02.jpg"); /* Example path */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,7 +132,7 @@ hr {
 }
 
 .breadcrumb-item.active {
-    color: #fff;
+    color: #ffffff !important;
 }
 
 .bread img {
@@ -326,37 +326,74 @@ table {
 
 /* Cart Totals Box */
 .cart__collaterals-wrap {
-  background-color: #0E1118;
-  padding: 20px;
-  border-radius: 12px;
+  background-color: transparent; /* <-- Yeh line badli gayi hai */
+  padding: 25px;
+  border-radius: 2px;
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.1);
 }
 
+
 .cart__collaterals-wrap .title {
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-weight: 600;
-  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00ff88;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cart__collaterals-wrap .list-wrap {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
 .cart__collaterals-wrap .list-wrap li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #333;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   font-size: 16px;
+  color: #ccc;
 }
 
 .cart__collaterals-wrap .list-wrap li:last-child {
   border-bottom: none;
   font-weight: 700;
+  font-size: 18px;
+  color: #fff;
 }
 
 .cart__collaterals-wrap .amount {
-  font-size: 18px;
-  font-weight: bold;
   color: #00ff88;
+  font-size: 20px;
+  font-weight: bold;
 }
+
+/* Checkout Button */
+.cart__collaterals-wrap a.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #00ff88d8;
+  color: #000;
+  font-weight: 700;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.cart__collaterals-wrap a.btn:hover {
+  background-color: #00cc6b;
+  color: #000;
+}
+
 @media (max-width: 768px) {
   .table__cart thead {
       display: none;
