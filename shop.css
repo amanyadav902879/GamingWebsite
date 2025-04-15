@@ -189,7 +189,7 @@ hr {
 }
 @media (max-width: 768px) {
   .shop_details-images-wrap {
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column-reverse; /* Stack vertically */
     align-items: center; /* Center all items */
     gap: 20px;
   }
@@ -387,6 +387,7 @@ p {
   color: #eee;
   padding: 20px;
   border-radius: 8px;
+  height: 300px;
 }
 table.table.table-sm {
   background-color: #1b242e !important;
