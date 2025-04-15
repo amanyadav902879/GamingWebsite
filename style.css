@@ -182,3 +182,40 @@
         opacity: 1;
     }
 }
+.scroll-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #45f882;
+    border-radius: 12px;
+    box-shadow: 0 -2px 28px #00ff00;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    z-index: 9999;
+  }
+  
+  .scroll-up img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+  }
+  
+  .scroll-up.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  
+  .scroll-up:hover {
+    transform: translateY(-5px);
+    background-color: #ff7f00;
+    box-shadow: 0 -2px 28px #ff9900;
+  }
+  
