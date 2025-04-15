@@ -61,23 +61,26 @@ hr{
     font-size: 10px;
 }
 /* Navbar Link Hover Effects */
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-link {
+    color: #00d2ff;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    color: #00d2ff; /* Neon Electric Blue for hover */
-    background: linear-gradient(45deg, #FFFF00, #FF7F00);
-    border-radius: 5px; /* Rounded corners */
-    animation: ease all;
+.navbar-nav .nav-link:hover {
+    color: #00d2ff;
+    background: linear-gradient(45deg, #ffff00, #ff7f00);
+    border-radius: 5px;
 }
 
-
+.navbar-nav .nav-link.active {
+    color: #39ff14;
+    font-weight: bold;
+}
 
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    background: linear-gradient(45deg, #9B00FF, #00FFFF);
-    border-radius: 5px; 
+    background: linear-gradient(45deg, #9b00ff, #00ffff);
+    border-radius: 5px;
 }
 
 .dropdown-item {
@@ -85,29 +88,21 @@ hr{
 }
 
 .dropdown-item:hover {
-    background-color: #00d2ff; 
-    color: #fff; 
+    background-color: #00d2ff;
+    color: #eef1da;
+    border-radius: 10px;
 }
 
-/* Active Link Hover */
-.navbar-nav .nav-item .nav-link.active {
-    color: #39ff14;
-    font-weight: bold; 
-}
-.navbar-nav .nav-item .nav-link {
-    color: #00d2ff; 
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
+/* Navbar Toggler Icon */
 .navbar-toggler-icon {
-    background-color: #7dcbff; 
-    border:none;
+    background-color: #7dcbff;
+    border: none;
 }
 .gaming_sub{
     color: white;
 }
 .gaming_head{
-    font-size: 50px;
+    font-size: 42px;
 }
 .shop_widget-title{
     align-items: baseline;
