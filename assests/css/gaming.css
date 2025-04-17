@@ -59,43 +59,102 @@
   .para {
     font-size: 10px;
   }
-  /* Navbar Link Hover Effects */
+  .navbar {
+
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
   .navbar-nav .nav-link {
-    color: #00d2ff;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    border-radius: 8px;
+    z-index: 1;
   }
   
-  .navbar-nav .nav-link:hover {
-    color: #00d2ff;
-    background: linear-gradient(45deg, #ffff00, #ff7f00);
-    border-radius: 5px;
-  }
-  
+  .navbar-nav .nav-link:hover,
   .navbar-nav .nav-link.active {
-    color: #39ff14;
-    font-weight: bold;
+      color: white;
+      background: linear-gradient(135deg, #00f2ff, #0077ff);
+      box-shadow: 0 0 15px #00f2ffaa, 0 0 25px #00f2ff55;
+      text-shadow: none;
+      transform: translateY(-2px);
   }
   
-  .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    background: linear-gradient(45deg, #9b00ff, #00ffff);
-    border-radius: 5px;
-  }
-  
-  .dropdown-item {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #00d2ff;
-    color: #eef1da;
+  .dropdown-menu {
+    background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+    border: 1px solid #00f2ff44;
+    box-shadow: 0 0 25px #00f2ff55;
     border-radius: 10px;
+    padding: 8px 0;
+    backdrop-filter: blur(6px); /* Gives frosted glass effect */
+    z-index: 9999;
+  }
+  .dropdown-menu li a{
+    color: white;
   }
   
-  /* Navbar Toggler Icon */
-  .navbar-toggler-icon {
-    background-color: #7dcbff;
-    border: none;
+  /* Dropdown text */
+  .dropdown-item {
+    color: #00f2ff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    text-shadow: 0 0 5px #00f2ff88;
+    background-color: transparent;
+  }
+  
+  /* On hover */
+  .dropdown-item:hover {
+    background: #00f2ff22;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff;
+    transform: scale(1.03);
+  }
+  
+  /* On active/click */
+  .dropdown-item:active {
+    background-color: #00f2ff33;
+    color: #ffffff;
+    text-shadow: 0 0 12px #00f2ff;
+  }
+  
+  
+  .btn-outline-primary {
+    border-color: #00f2ff;
+    color: #00f2ff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    box-shadow: 0 0 10px #00f2ff44;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #00f2ff;
+    color: #0f0f0f;
+    box-shadow: 0 0 20px #00f2ffaa;
+  }
+  
+  .navbar-brand img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    box-shadow: 0 0 12px #00f2ff;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
   }
   .gaming_sub {
     color: white;

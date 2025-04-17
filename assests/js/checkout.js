@@ -18,3 +18,45 @@ scrollBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+ScrollReveal().reveal('.title', {
+  delay: 200,
+  distance: '50px',
+  origin: 'bottom',
+  duration: 800,
+  easing: 'ease-in-out',
+  reset: true 
+});
+
+ScrollReveal().reveal('.form_grp, .select_grp', {
+  delay: 100,
+  distance: '30px',
+  origin: 'left',
+  interval: 100,
+  duration: 700,
+  reset: true
+});
+
+ScrollReveal().reveal('.order__info-wrap', {
+  delay: 300,
+  origin: 'right',
+  distance: '60px',
+  duration: 900,
+  reset: true
+});
+
+ScrollReveal().reveal('.bread_content, .bread img', {
+  delay: 300,
+  distance: '40px',
+  origin: 'top',
+  duration: 700,
+  reset: true
+});
+
+ScrollReveal().reveal('footer .footer-col', {
+  delay: 200,
+  interval: 200,
+  distance: '30px',
+  origin: 'bottom',
+  duration: 700,
+  reset: true
+});
