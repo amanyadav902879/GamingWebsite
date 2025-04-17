@@ -20,43 +20,140 @@
     flex-direction: column;
     animation: fadeInUp 1s ease forwards;
 }
+/* Home Section */
+.home3 {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  padding: 50px 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Inside Container */
+.home2 {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Headings */
+.home2 h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Paragraph Styling */
+.home2 p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Image Styling */
+.image {
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Image */
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
 /* Headings Animation */
 .home h1 {
     animation: fadeInUp 1s ease forwards;
 }
 
-/* Buttons */
-.first,
-.sec,
-.third {
-    border-radius: 10px;
-    padding: 10px 20px;
-    color: white;
-    border: 1px solid #ffffff;
-    transition: all 0.3s ease-in-out;
-    margin: 5px;
+.first, .sec, .third {
+  border-radius: 10px;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
+/* Cyberpunk Neon Glow */
 .first {
-    background: linear-gradient(to right, #f077e6, #00a2ff);
+  background: linear-gradient(to right, #ff00ff, #00ffff);
+  box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.8);
 }
 
 .sec {
-    background: linear-gradient(to right, #ec92e5, #00a2ff);
+  background: linear-gradient(to right, #ff9900, #ff00ff);
+  box-shadow: 0px 0px 15px rgba(255, 153, 0, 0.8);
 }
 
 .third {
-    background: linear-gradient(to right, #00a2ff, #dd87d6);
+  background: linear-gradient(to right, #00ffff, #ff9900);
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
 }
 
-/* Hover Effects on Buttons */
-.first:hover,
-.sec:hover,
-.third:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/* Hover Effects */
+.first:hover {
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 25px rgba(255, 0, 255, 1);
 }
+
+.sec:hover {
+  background: linear-gradient(to right, #ff00ff, #ff9900);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 25px rgba(255, 153, 0, 1);
+}
+
+.third:hover {
+  background: linear-gradient(to right, #ff9900, #00ffff);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 25px rgba(0, 255, 255, 1);
+}
+
+/* Hover Shine Effect */
+.first::before, .sec::before, .third::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 70%);
+  transition: all 0.4s ease;
+}
+
+.first:hover::before, .sec:hover::before, .third:hover::before {
+  top: 0;
+  left: 0;
+}
+
+
+
+
 
 /* Home3 Section */
 .home3 {

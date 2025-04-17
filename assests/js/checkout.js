@@ -21,7 +21,7 @@ scrollBtn.addEventListener('click', () => {
 ScrollReveal().reveal('.title', {
   delay: 200,
   distance: '50px',
-  origin: 'bottom',
+  origin: 'left',
   duration: 800,
   easing: 'ease-in-out',
   reset: true 
@@ -44,10 +44,17 @@ ScrollReveal().reveal('.order__info-wrap', {
   reset: true
 });
 
-ScrollReveal().reveal('.bread_content, .bread img', {
+ScrollReveal().reveal('.bread_content', {
   delay: 300,
   distance: '40px',
-  origin: 'top',
+  origin: 'left',
+  duration: 700,
+  reset: true
+});
+ScrollReveal().reveal('.bread img', {
+  delay: 300,
+  distance: '40px',
+  origin: 'right',
   duration: 700,
   reset: true
 });
@@ -56,7 +63,7 @@ ScrollReveal().reveal('footer .footer-col', {
   delay: 200,
   interval: 200,
   distance: '30px',
-  origin: 'bottom',
+  origin: 'top',
   duration: 700,
   reset: true
 });

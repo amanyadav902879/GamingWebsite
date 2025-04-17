@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <title>Shop Cart</title>
+    <title>Service Details</title>
 </head>
 
 <body>
@@ -328,15 +328,14 @@
     <div class="custom-cursor"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assests/js/shop.js"></script>
+    <script src="assests/js/shop.js">
+    </script>
     <script>
         const cursor = document.querySelector(".custom-cursor");
-
         document.addEventListener("mousemove", (e) => {
             cursor.style.top = e.clientY + "px";
             cursor.style.left = e.clientX + "px";
         });
-
         // Optional: Click pulse animation
         document.addEventListener("click", () => {
             cursor.classList.add("pulse");
