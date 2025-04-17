@@ -295,13 +295,14 @@ hr {
 .tab-pane img:hover {
   transform: scale(1.05);
 }
+
 .card1 {
   background-color: #0f161c;
   padding: 20px;
   border-radius: 10px;
   width: 84%;
   text-align: initial;
-  margin-left: 76px;
+  
 }
 .shop-number input::-webkit-outer-spin-button,
 .shop-number input::-webkit-inner-spin-button {
@@ -407,6 +408,7 @@ hr {
 .share a i {
   color: grey;
 }
+
 .nav_tabs {
   border: none;
 }

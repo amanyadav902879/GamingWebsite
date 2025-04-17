@@ -1,5 +1,4 @@
 const scrollBtn = document.getElementById('scrollUpBtn');
-
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
     scrollBtn.classList.add('show');
