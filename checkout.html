@@ -255,7 +255,7 @@
     <div class="bottom-bar">
         COPYRIGHT © 2025 - ALL RIGHTS RESERVED BY <span style="color:#00ff84">MYKD</span>
         <div class="payment-icons">
-            <img src="gamingimages/payment_card.png" alt="">
+            <img src="assests/images/payment_card.png" alt="">
         </div>
     </div>
 
@@ -265,7 +265,51 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assests/js/scrollreveal.min.js"></script>
-    <script src="assests/js/checkout.js"></script>
+   
+
+    <script>
+        document.getElementById("another-element").addEventListener("click", function () {
+    document.getElementById("coupon-form").style.display = "block";
+});
+
+const scrollBtn = document.getElementById('scrollUpBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    scrollBtn.classList.add('show');
+  } else {
+    scrollBtn.classList.remove('show');
+  }
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+ScrollReveal().reveal('.title', {
+  delay: 200,
+  distance: '50px',
+  origin: 'left',
+  duration: 800,
+  easing: 'ease-in-out',
+  reset: true 
+});
+
+
+
+
+ScrollReveal().reveal('footer .footer-col', {
+  delay: 200,
+  interval: 200,
+  distance: '30px',
+  origin: 'top',
+  duration: 700,
+  reset: true
+});
+
+    </script>
 </body>
 
 </html>

@@ -24,39 +24,7 @@ a {
   background-position: center;
   height: 65vh;
 }
-.first {
-  background: linear-gradient(to right, #f077e6, #00a2ff);
-  border-radius: 10px;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  border: 1px solid#ffffff;
-}
-.sec {
-  background: linear-gradient(to right, #ec92e5, #00a2ff);
-  border-radius: 10px;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  border: 1px solid#ffffff;
-}
-.third {
-  background: linear-gradient(to right, #00a2ff, #dd87d6);
-  border-radius: 10px;
-  border: 1px solid#ffffff;
-  padding: 10px 20px 10px 20px;
-  color: white;
-}
-hr {
-  transform: rotate(90deg);
-}
 
-.home3 {
-  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #809b7b);
-  height: 130vh;
-}
-.image {
-  border-radius: 30px;
-  border: 1px solid white;
-}
 .para {
   font-size: 10px;
 }
