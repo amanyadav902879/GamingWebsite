@@ -332,6 +332,8 @@ select{
     margin: 0 0 35px;
     padding: 19px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .shop__item-thumb {
     align-items: center;
