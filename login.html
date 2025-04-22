@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assests/css/shopcart.css">
+    <link rel="stylesheet" href="assests/css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Shop Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>Login</title>
 </head>
 
 <body>
     <div class="container-fluid home">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="login.html">
                     <img src="assests/images/Neon discord icon.jpg" alt="" class="img-fluid rounded-pill"
                         style="height: 60px;width: 60px; object-fit: cover;">
                 </a>
@@ -27,7 +28,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item px-4 fs-4">
-                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item px-4 fs-4">
                             <a class="nav-link " href="#">About Us</a>
@@ -59,9 +60,11 @@
                                 <li><a class="dropdown-item" target="_blank" href="shop.html">Page Details</a></li>
                                 <li><a class="dropdown-item" target="_blank" href="shopcart.html">Shop Cart</a></li>
                                 <li><a class="dropdown-item" target="_blank" href="checkout.html">Checkout</a></li>
-                                <li><a class="dropdown-item" target="_blank" href="service.html">Our Servuice</a></li>
-                                <li><a class="dropdown-item" target="_blank" href="serviceDetails.html">Service details</a></li>
-                                <li><a class="dropdown-item" target="_blank" href="playerDetail.html">player details</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="service.html">Our Service</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="serviceDetails.html">Service
+                                        details</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="playerDetail.html">player details</a>
+                                </li>
                                 <li><a class="dropdown-item" target="_blank" href="login.html">LOGIN</a></li>
                                 <li><a class="dropdown-item" target="_blank" href="regsiter.html">forgot</a></li>
                                 <li><a class="dropdown-item" target="_blank" href="forgot.html">register</a></li>
@@ -69,18 +72,18 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-outline-primary">Login</button>
+                <button type="button" class="btn btn-outline-primary" href="login.html">Login</button>
             </div>
         </nav>
         <div class="container">
             <div class="row d-flex justify-content-between gaming-col">
                 <div class="col-xl-6 col-lg-7" style="margin-top:13%;">
                     <div class="bread_content">
-                        <h2 class="bread_title">SHOP CART</h2>
+                        <h2 class="bread_title">LOGIN</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="/" class="">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                                <li class="breadcrumb-item"><a href="/" class="">HOME</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">SIGN IN</li>
                             </ol>
                         </nav>
                     </div>
@@ -93,68 +96,54 @@
             </div>
         </div>
     </div>
-    <div class="cart__area team-bg section-pt-120 section-pb-120"
-            style="background-image: url(assests/images/team_bg.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <table class="table table__cart">
-                            <thead>
-                                <tr>
-                                    <th class="product__thumb">&nbsp;</th>
-                                    <th class="product__name">Product</th>
-                                    <th class="product__price">Price</th>
-                                    <th class="product__quantity">Quantity</th>
-                                    <th class="product__subtotal">Subtotal</th>
-                                    <th class="product__remove">&nbsp;</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="product__thumb"><a href="/shop-details" class=""><img
-                                                src="assests/images/product01.jpg" alt="prd-img"></a></td>
-                                    <td class="product__name"><a href="/shop-details" class="">Antiaging and
-                                            Longevity</a></td>
-                                    <td class="product__price">$13.00</td>
-                                    <td class="product__quantity">
-                                        <div class="shop__details-qty">
-                                            <form action="#" class="quantity num-block"><input type="text"
-                                                    class="in-num" readonly="" value="1">
-                                                <div class="qtybutton-box"><span class="plus"><i
-                                                            class="fas fa-angle-up"></i></span><span
-                                                        class="minus dis"><i class="fas fa-angle-down"></i></span></div>
-                                            </form>
-                                        </div>
-                                    </td>
-                                    <td class="product__subtotal">$13.00</td>
-                                    <td class="product__remove"><a href="#">×</a></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="6" class="cart__actions">
-                                        <form action="#" class="cart__actions-form"><input type="text"
-                                                placeholder="Coupon code"><button type="submit" class="btn">Apply
-                                                coupon</button>
-                                                <div class="update__cart-btn text-end f-right"><button type="submit"
-                                                    class="btn">Update cart</button></div>
-                                            </form>
-                                        
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="cart__collaterals-wrap">
-                            <h2 class="title">Cart totals</h2>
-                            <ul class="list-wrap">
-                                <li> Subtotal <span>$32.00</span></li>
-                                <li> Total <span class="amount">$32.00</span></li>
-                            </ul><a href="checkout.html" class="btn">Proceed to checkout</a>
+    <section class="signup__area team-bg section-pt-120 section-pb-120"
+        style="background-image: url(assests/images/team_bg.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="singUp-wrap">
+                        <h2 class="title">Welcome back!</h2>
+                        <p>Hey there! Ready to log in? Just enter your username and password below and you'll be back in
+                            action in no time. Let's go!</p>
+                        <div class="account__social"><a href="#" class="account__social-btn"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.16 12.1932C20.16 11.5905 20.1059 11.011 20.0055 10.4546H12V13.7425H16.5746C16.3775 14.8051 15.7786 15.7053 14.8784 16.308V18.4407H17.6255C19.2327 16.961 20.16 14.7819 20.16 12.1932Z"
+                                        fill="#4285F4"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0002 20.5C14.2952 20.5 16.2193 19.7389 17.6257 18.4407L14.8786 16.3079C14.1175 16.8179 13.1439 17.1193 12.0002 17.1193C9.78635 17.1193 7.91248 15.6241 7.24407 13.615H4.4043V15.8173C5.80294 18.5952 8.67749 20.5 12.0002 20.5Z"
+                                        fill="#34A853"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.24387 13.6151C7.07387 13.1051 6.97728 12.5604 6.97728 12.0001C6.97728 11.4399 7.07387 10.8951 7.24387 10.3851V8.18286H4.40409C3.82841 9.33036 3.5 10.6285 3.5 12.0001C3.5 13.3717 3.82841 14.6699 4.40409 15.8174L7.24387 13.6151Z"
+                                        fill="#FBBC05"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0002 6.88069C13.2482 6.88069 14.3686 7.30955 15.2495 8.15183L17.6875 5.71387C16.2155 4.34227 14.2914 3.5 12.0002 3.5C8.67748 3.5 5.80294 5.40478 4.4043 8.18273L7.24407 10.385C7.91248 8.37592 9.78635 6.88069 12.0002 6.88069Z"
+                                        fill="#EA4335"></path>
+                                </svg> Continue with google </a></div>
+                        <div class="account__divider"><span>OR</span></div>
+                        <form class="account__form">
+
+                            <div class="form-grp"><label for="email">Email</label><input name="email" type="text"
+                                    id="email" placeholder="email"></div>
+
+                            <div class="form-grp"><label for="password">Password</label><input name="password"
+                                    type="text" id="password" placeholder="password"></div>
+                            <div class="account__check">
+                                <div class="account__check-remember"><input type="checkbox" class="form-check-input"
+                                        id="terms-check" value=""><label for="terms-check"
+                                        class="form-check-label">Remember me</label></div>
+                                <div class="account__check-forgot"><a href="forgot.html" class="">Forgot
+                                        Password?</a></div>
+                            </div><button type="submit" class="btn btn-two arrow-btn">Login</button>
+                        </form>
+                        <div class="account__switch">
+                            <p>Don't have an account?<a href="regsiter.html" class="">Sign Up</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
     <footer>
         <div class="footer-col">
@@ -214,10 +203,30 @@
     <div class="scroll-up" id="scrollUpBtn">
         <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Up">
     </div>
-
+    <div class="custom-cursor"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assests/js/shop.js"></script>
+    <script src="assests/js/checkout.js"></script>
+    <script>
+        const cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.top = e.clientY + "px";
+            cursor.style.left = e.clientX + "px";
+        });
+
+        // Optional: Click pulse animation
+        document.addEventListener("click", () => {
+            cursor.classList.add("pulse");
+            setTimeout(() => {
+                cursor.classList.remove("pulse");
+            }, 300);
+        });
+        css
+        Copy
+        Edit
+
+    </script>
 </body>
 
 </html>

@@ -63,6 +63,10 @@
                                 <li><a class="dropdown-item" target="_blank" href="service.html">Our Servuice</a></li>
                                 <li><a class="dropdown-item" target="_blank" href="serviceDetails.html">Service
                                         details</a></li>
+                                        <li><a class="dropdown-item" target="_blank" href="playerDetail.html">player details</a></li>
+                                        <li><a class="dropdown-item" target="_blank" href="login.html">LOGIN</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="regsiter.html">forgot</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="forgot.html">register</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -100,15 +104,19 @@
                     <!-- RIGHT SIDE IMAGE -->
                     <div class="tab-content tab_content">
                         <div class="tab-pane fade show active" id="img1">
-                            <img src="assests/images/shop_details01.jpg" alt="">
+                            <img src="assests/images/shop_details01.jpg" alt="" onclick="openModal(this.src)">
                         </div>
                         <div class="tab-pane fade" id="img2">
-                            <img src="assests/images/shop_details02.jpg" alt="">
+                            <img src="assests/images/shop_details02.jpg" alt="" onclick="openModal(this.src)">
                         </div>
                         <div class="tab-pane fade" id="img3">
-                            <img src="assests/images/shop_details03.jpg" alt="">
+                            <img src="assests/images/shop_details03.jpg" alt="" onclick="openModal(this.src)">
                         </div>
                     </div>
+                    <div id="myModal" class="modal" onclick="closeModal()">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                      </div>
                     <div class="card1">
                         <div class="rating">
                             <div class="star d-flex">
@@ -137,7 +145,7 @@
                        
                         <div class="shop-number d-flex">
                             <input type="number" id="number" value="1">
-                            <button class="add-to-cart">ADD TO CART</button>
+                            <a href="shopcart.html"><button class="add-to-cart">ADD TO CART</button></a>
                         </div>
                         <div class="categories">Categories: Gamdias, Apple, Huawei</div>
                         <div class="tags">Tags: Silver, Pink, Green</div>
@@ -401,6 +409,15 @@ top: 0,
 behavior: 'smooth'
 });
 });
+
+function openModal(src) {
+      document.getElementById("myModal").style.display = "block";
+      document.getElementById("modalImage").src = src;
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
 
 
     </script>

@@ -315,20 +315,21 @@ a {
 .model-buttons button.active {
   background-color: #ff9900;
 }
-.add-to-cart {
+.shop-number a .add-to-cart {
   background-color: #45f882;
-  color: #1a1a1a;
   border: none;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 25%;
-  clip-path: path(
-    "M8,0H152a8,8,0,0,1,8,8V33.63C160,37.36,140,53,140,53H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"
-  );
+  clip-path: path("M8,0H152a8,8,0,0,1,8,8V33.63C160,37.36,140,53,140,53H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z");
+  color: var(--tg-common-color-black);
+  display: block;
+  font-size: 15px;
+  font-weight: 800;
+  height: 53px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 160px;
 }
-.add-to-cart:hover {
+.shop-number a .add-to-cart:hover {
   background-color: #ffbe18;
   transition: transform 0.4s ease;
 }
@@ -400,21 +401,7 @@ p {
   margin-bottom: 20px;
   border-bottom: 1px solid #333;
 }
-.shop__details-cart-btn {
-  background-color: var(--tg-theme-primary);
-  border: none;
-  clip-path: path("M8,0H152a8,8,0,0,1,8,8V33.63C160,37.36,140,53,140,53H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z");
-  color: var(--tg-common-color-black);
-  display: block;
-  font-family: var(--tg-heading-font-family);
-  font-size: 15px;
-  font-weight: var(--tg-fw-extra-bold);
-  height: 53px;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 160px;
-}
+
 /* Tab Buttons */
 .product_desc-wrap .nav-tabs .nav-link {
   background: transparent;
